@@ -1,0 +1,136 @@
+body {
+  margin: 0 auto;
+  background-color: #333;
+  font-size: 16px;
+  user-select: none;
+}
+
+* {
+  margin: 0;
+}
+
+:root {
+  --dark-cyan: hsl(158deg 36% 37%);
+  --cream: hsl(30deg 38% 92%);
+  --very-dark-blue: hsl(212deg 21% 14%);
+  --dark-grayish-blue: hsl(228deg 12% 48%);
+  --white: hsl(0deg 0% 100%);
+}
+
+.container-absolute {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-card {
+  background-color: var(--white);
+  width: 600px;
+  display: flex;
+  flex-flow: row nowrap;
+  border-radius: 12.5px;
+  overflow: hidden;
+  height: 450px;
+}
+
+.img {
+  width: 50%;
+  height: 100%;
+}
+
+.contain {
+  width: 50%;
+  height: 100%;
+  margin: 0 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
+.product {
+  letter-spacing: 0.5em;
+  font-size: 0.7em;
+  font-family: Monstserrat, sans-serif;
+  text-transform: uppercase;
+}
+
+.name {
+  text-transform: capitalize;
+  font-family: Fraunces, serif;
+  font-weight: bold;
+  line-height: 1em;
+}
+
+.description {
+  font-family: Montserrat, sans-serif;
+}
+
+.container-prices {
+  display: flex;
+  display: row wrap;
+  align-items: center;
+  text-align: left;
+  gap: 10px;
+}
+
+.price {
+  font-family: Fraunces, serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--dark-cyan);
+}
+
+.price-tached {
+  text-decoration: line-through;
+  font-family: Montserrat, sans-serif;
+}
+
+.button {
+  gap: 5px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  min-width: 100px;
+  border: 0;
+  border-radius: 10px;
+  outline: 1px solid black;
+  background: var(--dark-cyan);
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.button:hover {
+  background-color: var(--very-dark-blue);
+}
+
+.prueba {
+  color: #fff;
+}
+
+@media screen and (max-width: 412px) {
+  .img {
+    width: initial;
+    display: block;
+    height: 240px;
+  }
+
+  .container-card {
+    flex-flow: column nowrap;
+    margin: 10px;
+    height: 600px;
+  }
+
+  .contain {
+    justify-content: space-around;
+    width: calc(100% - 20px);
+    height: 370px;
+  }
+  .button {
+    width: inherit;
+  }
+}
