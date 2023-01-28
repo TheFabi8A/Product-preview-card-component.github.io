@@ -71,6 +71,7 @@ body {
 
 .description {
   font-family: Montserrat, sans-serif;
+  color: var(--dark-grayish-blue);
 }
 
 .container-prices {
