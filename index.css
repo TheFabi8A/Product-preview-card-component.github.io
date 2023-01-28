@@ -35,9 +35,13 @@ body {
   height: 450px;
 }
 
-.img {
+[class^="img"] {
   width: 50%;
   height: 100%;
+}
+
+.img-mobile {
+  display: none;
 }
 
 .contain {
@@ -115,10 +119,14 @@ body {
 }
 
 @media screen and (max-width: 412px) {
-  .img {
+  [class^="img"] {
     width: initial;
     display: block;
     height: 240px;
+  }
+
+  .img-desktop {
+    display: none;
   }
 
   .container-card {
