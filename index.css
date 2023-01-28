@@ -54,6 +54,7 @@ body {
   font-size: 0.7em;
   font-family: Monstserrat, sans-serif;
   text-transform: uppercase;
+  color: var(--dark-grayish-blue);
 }
 
 .name {
@@ -86,6 +87,7 @@ body {
 .price-tached {
   text-decoration: line-through;
   font-family: Montserrat, sans-serif;
+  color: var(--dark-grayish-blue);
 }
 
 .button {
