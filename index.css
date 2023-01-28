@@ -57,6 +57,7 @@ body {
 }
 
 .name {
+  width: 90%;
   text-transform: capitalize;
   font-family: Fraunces, serif;
   font-weight: bold;
