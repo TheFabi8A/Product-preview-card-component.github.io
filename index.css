@@ -1,6 +1,6 @@
 body {
   margin: 0 auto;
-  background-color: #333;
+  background-color: var(--cream);
   font-size: 16px;
   user-select: none;
 }
