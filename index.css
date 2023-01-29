@@ -35,11 +35,13 @@ body {
   border-radius: 12.5px;
   overflow: hidden;
   height: 450px;
+  margin: 10px;
 }
 
 [class^="img"] {
   width: 50%;
   height: 100%;
+  object-fit: cover;
 }
 
 .img-mobile {
@@ -135,7 +137,6 @@ body {
 
   .container-card {
     flex-flow: column nowrap;
-    margin: 10px;
     height: 600px;
   }
 
