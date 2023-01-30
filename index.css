@@ -8,7 +8,6 @@ body {
   margin: 0 auto;
   background-color: var(--cream);
   font-size: 16px;
-  user-select: none;
 }
 
 :root {
@@ -20,8 +19,7 @@ body {
 }
 
 .container-absolute {
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +37,6 @@ body {
 }
 
 [class^="img"] {
-  width: 50%;
   height: 100%;
   object-fit: cover;
 }
@@ -95,7 +92,7 @@ body {
 }
 
 .price-tached {
-  text-decoration: line-through;
+  font-size: 0.8em;
   font-family: Montserrat, sans-serif;
   color: var(--dark-grayish-blue);
 }
@@ -116,17 +113,17 @@ body {
   color: var(--white);
 }
 
-.button:hover {
-  background-color: var(--very-dark-blue);
-}
-
 .prueba {
   color: #fff;
 }
 
-@media screen and (max-width: 412px) {
+.button:hover {
+  background-color: var(--very-dark-blue);
+}
+
+@media screen and (max-width: 450px) {
   [class^="img"] {
-    width: initial;
+    width: 100%;
     display: block;
     height: 240px;
   }
